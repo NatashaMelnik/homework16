@@ -12,6 +12,7 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+//    providers: [{ provide: APP_BASE_HREF, useValue: '/' }]
     }).compileComponents();
   });
 
@@ -37,7 +38,7 @@ describe('AppComponent', () => {
   it('[SUCCESS] User clicked on MANDATE field', () => {
     browser.get('/cockpit');
     browser.wait(
-      ExpectedConditions.presenceOf(element(by.css('#linkToMandate'))), 
+      ExpectedConditions.presenceOf(element(by.css('#linkToMandate'))),
       5000
     );
   });
